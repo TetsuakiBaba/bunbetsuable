@@ -17,7 +17,7 @@ function loadHTMLFile(_url, _regexp, _id) {
                 var elem = document.querySelector(id);
                 elem.innerHTML += data;
                 //console.log(document.readyState);
-                console.log(_url)
+                //console.log(_url)
                 resolve(data);
 
             }
@@ -29,7 +29,7 @@ function loadHTMLFile(_url, _regexp, _id) {
 }
 
 async function loadHTMLAsync(_urls, _regexp, _id) {
-    console.log('await start');
+    //console.log('await start');
 
     let table = document.createElement('table');
     table.classList = 'table table-hover';
@@ -60,7 +60,7 @@ async function loadHTMLAsync(_urls, _regexp, _id) {
     for (url of _urls) {
         await loadHTMLFile(url, _regexp, _id);
     }
-    console.log('await end');
+    //console.log('await end');
 
 
     let tables = document.querySelector('tmp').querySelectorAll('table');
@@ -78,7 +78,7 @@ async function loadHTMLAsync(_urls, _regexp, _id) {
         }
     }
     document.querySelector('contents').appendChild(table);
-    console.log(table);
+    //console.log(table);
     document.querySelector('tmp').hidden = true;
 };
 
@@ -100,7 +100,7 @@ window.onload = function () {
         '@<table>(.*?)<\/table>@s',
         'tmp');
 
-    console.log(document.querySelector('tmp').querySelectorAll('table'));
+    //console.log(document.querySelector('tmp').querySelectorAll('table'));
     //console.log(data);
 
 

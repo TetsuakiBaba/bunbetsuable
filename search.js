@@ -44,6 +44,6 @@ function keyTyped(event) {
         }
     }
 
-    console.log(document.querySelector('table'));
+    //console.log(document.querySelector('table'));
 
 }
