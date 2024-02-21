@@ -10,8 +10,8 @@ td {
     line-height: 1.5em;
 }
 
-td p {
-    line-height: 1.0em;
+p {
+    line-height: 1.5em;
 }
 
 footer {
@@ -23,6 +23,10 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .fadein {
